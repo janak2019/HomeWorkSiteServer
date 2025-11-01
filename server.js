@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://sambid.vercel.app', // Only allow requests from this domain
+  origin: ['https://sambid.vercel.app','http://localhost:5173'], // Only allow requests from this domain
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   credentials: true, // Allow cookies/auth headers
