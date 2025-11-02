@@ -6,7 +6,7 @@ const router = express.Router();
 // Example protected route: get logged-in user info
 router.get("/profile", protect, (req, res) => {
   res.json({
-    // message: "User profile fetched successfully",
+    message: "User profile fetched successfully",
     user: req.user,
   });
 });
